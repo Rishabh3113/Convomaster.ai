@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shiny_black"
+    tools:context=".options">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+         >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:layout_margin="30dp"
+                android:textColor="@color/white"
+                android:text="Generate Ai information"/>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="13dp"
+            android:orientation="vertical">
+
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_gravity="fill"
+                android:layout_margin="10dp"
+
+
+
+
+                android:backgroundTint="@color/grey"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="9dp"
+                        android:fontFamily="sans-serif-medium"
+
+                        android:text="Generate Text from text input only"
+                        android:textColor="@color/white"
+                        android:textSize="23sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="9dp"
+                        android:fontFamily="sans-serif-medium"
+
+                        android:text="Get Ai generated response in text"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="Try it"
+                        android:id="@+id/card1"
+                        android:textSize="18sp"
+                        android:textColor="@color/lavender"
+                        android:layout_gravity="end"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="13dp"
+                android:orientation="vertical">
+
+
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="170sp"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+
+
+
+
+                    android:backgroundTint="@color/grey"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="9dp"
+                            android:fontFamily="sans-serif-medium"
+
+                            android:text="Generate Text from text and image input(Multimodal)"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="9dp"
+                            android:fontFamily="sans-serif-medium"
+
+                            android:text="Upload image and ask Ai about that "
+                            android:textColor="@color/white"
+                            android:textSize="18sp"/>
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:text="Try it"
+                            android:id="@+id/card2"
+                            android:textSize="18sp"
+                            android:textColor="@color/lavender"
+                            android:layout_gravity="end"
+                            android:backgroundTint="@color/grey"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+
+
+
+
+                    android:backgroundTint="@color/grey"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="9dp"
+                            android:fontFamily="sans-serif-medium"
+
+                            android:text="Got no one to talk? Ai is here"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="9dp"
+                            android:fontFamily="sans-serif-medium"
+
+                            android:text="conversate with Ai like your friends"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"/>
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:text="Try it"
+                            android:textSize="18sp"
+                            android:id="@+id/card3"
+                            android:textColor="@color/lavender"
+                            android:layout_gravity="end"
+                            android:backgroundTint="@color/grey"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
