@@ -86,6 +86,7 @@
                         android:text="Try it"
                         android:id="@+id/card1"
                         android:textSize="18sp"
+                        android:layout_margin="2dp"
                         android:textColor="@color/lavender"
                         android:layout_gravity="end"
                         android:backgroundTint="@color/grey"

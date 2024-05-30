@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AiApp"
         tools:targetApi="31">
         <activity
+            android:name=".text"
+            android:exported="false" />
+        <activity
             android:name=".options"
             android:exported="false" />
         <activity
