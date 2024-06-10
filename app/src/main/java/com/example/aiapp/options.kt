@@ -20,6 +20,8 @@ class options : AppCompatActivity() {
 
         val button2:Button=findViewById(R.id.card2)
         button2.setOnClickListener(){
+            val intent=Intent(this,option_2::class.java)
+            startActivity(intent)
 
         }
 

@@ -10,4 +10,5 @@
     <color name="shiny_black">#000401</color>
     <color name="grey">#4e545c</color>
     <color name="lavender">#9d9dcc</color>
+    <color name="background">#373737</color>
 </resources>

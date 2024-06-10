@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".text">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Generate text from image and text"
+                    android:textColor="@color/white"
+                    android:textSize="39dp"
+                    android:layout_margin="22dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="30dp"
+                    android:gravity="center">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:inputType="textMultiLine"
+                        android:outlineSpotShadowColor="@color/white"
+                        android:drawableEnd="@drawable/baseline_edit_24"
+
+
+
+                        android:backgroundTintMode="@color/white"
+                        android:hint="Enter image or text "
+                        android:id="@+id/gen_text"
+
+
+                        android:textColor="@color/white"
+                        android:textSize="24dp"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/bars"
+                    android:layout_gravity="center_horizontal"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn"
+                    android:src="@drawable/baseline_add_a_photo_24"
+                    android:backgroundTint="@color/background"
+                    android:layout_gravity="end"/>
+
+
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/images"
+                    android:visibility="gone"
+                    android:layout_marginLeft="43dp"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Generate response"
+                    android:gravity="start"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/text2"
+                    android:textSize="18sp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/white"/>
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:progressTint="@color/white"
+                    android:id="@+id/bar"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="30dp"
+                    android:gravity="center">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:inputType="textMultiLine"
+                        android:drawableEnd="@drawable/baseline_notes_24"
+                        android:backgroundTint="@color/white"
+                        android:hint="GENERATE OUTPUT "
+                        android:id="@+id/gen_image"
+
+                        android:textColor="@color/white"
+                        android:textSize="24dp"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

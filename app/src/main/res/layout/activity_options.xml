@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/background"
     android:layout_height="match_parent"
-    android:background="@color/shiny_black"
-    tools:context=".options">
+    tools:context=".text">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -90,7 +90,7 @@
                         android:textColor="@color/lavender"
                         android:layout_gravity="end"
                         android:backgroundTint="@color/grey"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="50dp"/>
 
 
 
