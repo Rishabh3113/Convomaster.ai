@@ -90,7 +90,7 @@ class option_2 : AppCompatActivity() {
 
         runBlocking {
             val response = generativeModel.generateContent(image)
-
+            setProgress(100)
             output.setText(response.text)
 
 

@@ -55,7 +55,6 @@ class text : AppCompatActivity() {
         runBlocking {
             val response = generativeModel.generateContent(prompt)
             bar.visibility=View.GONE
-
             gen.setText(response.text)
 
         }

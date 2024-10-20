@@ -27,7 +27,8 @@ class options : AppCompatActivity() {
 
         val button3:Button=findViewById(R.id.card3)
         button3.setOnClickListener(){
-
+              val intent=Intent(this,audio::class.java)
+               startActivity(intent)
         }
 
     }
